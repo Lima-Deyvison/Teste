@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+}
+
+a,span,p,h1,h2,h3,h4,h5,h6{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 12pt;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #585858;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+
+.logo img{
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+.navegacao{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 12pt;
+}
+
+.navegacao a::after{
+    display: flex;
+    content: " ";
+    width: 0px;
+    height:4px;
+    background-image: linear-gradient(45deg, #ff2500, #ff7100);
+    border-radius: 10px;
+    position: absolute;
+    transition: 0.4s;
+    top: 50px;
+}
+
+.navegacao a:hover::after{
+    width: 40px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: #1c1c1c;
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bem-vindo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 300px;
+    justify-content: center;
+}
+
+.home1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home1 h1{
+    font-size: 28pt;
+    text-align: center;
+}
+
+.home1 p{
+    text-align: center;
+    line-height: 1.6;
+}
+
+#comecar{
+    border: 1px solid #585858;
+    width: 140px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+#comecar:hover{
+    background-image: linear-gradient(45deg, #ff7100, #ff2500);
+    border: none;
+}
+
+.login{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#login-form label{
+    font-size: 11pt;
+    color: #f1f1f1;
+}
+
+#login-form a{
+    font-size: 11pt;
+    color: #f1f1f1;
+}
+
+#login-form a::after{
+    display: flex;
+    content: " ";
+    width: 0px;
+    height:4px;
+    background-image: linear-gradient(45deg, #ff2500, #ff7100);
+    border-radius: 10px;
+    position: absolute;
+    transition: 0.4s;
+}
+
+#login-form a:hover::after{
+    width: 80px; 
+}
+
+fieldset{
+    border: 2px solid #585858;
+    border-radius: 8px;
+}
+
+legend{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(130deg, #ff7100, #ff2500);
+    border-radius: 8px;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.inputBox{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: center;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #585858;
+    outline: none;
+    color: #f1f1f1;
+    font-size: 10pt;
+    letter-spacing: 2px;
+}
+
+#submit{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #585858;
+    border-radius: 15px;
+    color: #f1f1f1;
+    background: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#submit:hover{
+    background-image: linear-gradient(130deg, #ff7100, #ff2500);
+    border: none;
+}
+
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.user-element{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#user-element{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#element-avatar img{
+    width: 150px;
+    padding: 10px;
+}
+
+.user-summary{
+    text-align: center;
+}
+
+.grupos{
+    text-align: center;
+}
+
+.user-element a, ul, span, p{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 12pt;
+    padding: 5px;
+}
+
+.user-element label{
+    color: #f1f1f1;
+}
+
+#user-element a, ul, span, p{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 12pt;
+    padding: 5px;
+}
+
+
+.user-element h1{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 18pt;
+    padding: 10px;
+}
+
+#outers{
+    width: 100%;
+    text-align: center;
+}
+
+#outers a{
+    font-size: 12pt;
+}
+
+.signup{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBoxSignup{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+}
+
+.inputBoxSignup a, label{
+    font-size: 11pt;
+    color: #f1f1f1;
+}
+
+#submit-cadastrar{
+    width: 140px;
+    height: 35px;
+    border: 1px solid #585858;
+    border-radius: 50px;
+    color: #f1f1f1;
+    font-size: 12pt;
+    background: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#submit-cadastrar:hover{
+    background-image: linear-gradient(130deg, #ff7100, #ff2500);
+    border: none;
+}
+
+.signup-form a::after{
+
+    display: flex;
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #ff2500, #ff7100);
+    border-radius: 10px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.signup-form a:hover::after{
+    width: 80px;
+}
+
+.page-groups{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.new-poll{
+    border: 1px solid #585858;
+    border-radius: 35px;
+    height: 35px;
+    width: 175px;
+    background: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.new-poll:hover{
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff2500, #ff7100);
+}
+
+.page-groups a{
+    font-size: 11pt;
+    color: #f1f1f1;
+}
+
+.page-groups button a{
+    font-size: 12pt;
+}
+
+.page-polls{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.button-confirmar-poll{
+    padding: 15px;
+}
+
+.button-create-poll{
+    background: none;
+    border: 1px solid #585858;
+    border-radius: 35px;
+    width: 120px;
+    height: 35px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.button-create-poll:hover{
+    border: none;
+    background: linear-gradient(to right, #ff2500, #ff7100);
+}
+
+.enviar-response{
+    background: none;
+    border: 1px solid #585858;
+    border-radius: 35px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.enviar-response:hover{
+    border: none;
+    background: linear-gradient(to right, #ff2500, #ff7100);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    background-color: #1c1c1c;
+    border-top: 1px solid #585858;
+}
+
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center; 
+}
+
+.rodape p{
+    color: #f1f1f1;
+    font-size: 11pt;
+}

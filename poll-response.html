@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script src="js/main.js" defer></script>
+    <script src="js/user-profile.js" defer></script>
+    <title>Respostas | Votala</title>
+    <!--<link rel="stylesheet" href="css/normalize.css">-->   
+    <!--<link rel="manifest" href="site.webmanifest">-->
+</head>
+<body>
+    
+    <header>
+		<div class="container">
+			<div class="logo">
+				<img src="images/logomarca-simple.png" id="newhome" alt="Logomarca-votala">
+			</div>
+			<div class="menu">
+				<div class="navegacao">
+					<a href="login.html">Entrar</a>
+					<a href="signup.html">Cadastre-se</a>
+					<a href="https://bitbucket.org/lssv6-webdev/votalaweb/src/main/" target="_blank">Repositório</a>
+					<!--<a href="404.html" target="_blank">Documentação</a>-->
+					<a href="user-profile.html">Perfil</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <main>
+
+        <div class="principal">
+            
+			<div class="page-polls">
+
+				<div class="user-element">
+					<h1>Responda</h1>
+				</div>
+
+				<div class="user-element">
+					<span>Matar Aula</span>		<!--AQUI ENTRA O NOME DA ENQUETE-->
+				</div>
+
+				<div class="user-element">
+					<p>Opções: </p>
+				</div>
+
+				<div class="user-element">
+					<ul>
+
+						<li>
+							<input type="checkbox" id="sim" name="sim" value="sim">
+							<label for="sim">Sim</label>
+						</li>
+
+						<li>
+							<input type="checkbox" id="nao" name="nao" value="nao">
+							<label for="nao">Não</label>
+						</li>
+
+						<li>
+							<input type="checkbox" id="tuedoido" name="tuedoido" value="tuedoido">
+							<label for="tuedoido">Tu é doido?</label>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="user-element" id="alerta">
+					<p style="font-size: 11pt;"><b>ESCOLHA ENTRE 2 a 3 opções!</b></p>
+				</div>
+
+				<div class="user-element">
+					<button id="" class="enviar-response" onclick=""><a href="polls.html">Enviar</a></button>
+				</div>
+
+				<div class="user-element">
+					<a href="polls.html">Ver enquetes</a>
+				</div>
+
+				<div class="user-element">
+					<a href="groups.html">Grupo</a>
+				</div>
+
+				<div class="user-element">
+					<a href="user-profile.html">Acessar perfil</a>
+				</div>
+
+			</div>
+
+        </div>
+
+    </main>
+
+    <footer>
+		<div class="rodape">
+			<p>Developers <a href="https://www.linkedin.com/in/limadeyvison/" target="_blank">Deyvison Lima</a> & <a href="https://www.linkedin.com/in/lucas-sousa-silva-116267259" target="_blank">Lucas Sousa Silva</a></p>
+		</div>
+	</footer>
+
+</body>
+</html>

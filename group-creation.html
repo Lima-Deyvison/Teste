@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script src="js/main.js" defer></script>
+    <script src="js/group-creation.js" defer></script>
+    <title>Criar um grupo | Votala</title>
+    <!--<link rel="stylesheet" href="css/normalize.css">-->   
+    <!--<link rel="manifest" href="site.webmanifest">-->
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img src="images/logomarca-simple.png" id="newhome" alt="Logomarca-votala">
+			</div>
+			<div class="menu">
+				<div class="navegacao">
+					<a href="login.html">Entrar</a>
+					<a href="signup.html">Cadastre-se</a>
+					<a href="https://bitbucket.org/lssv6-webdev/votalaweb/src/main/" target="_blank">Repositório</a>
+					<!--<a href="404.html" target="_blank">Documentação</a>-->
+					<a href="user-profile.html">Perfil</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <main>
+        <div class="principal">
+            
+                <div id="group-creation" class="user">
+                    <form autocomplete="off">           
+
+						<div class="user-element">
+							<h1>Criar grupo</h1>
+						</div>
+
+						<div class="user-element">
+							<label for="group_name">Insira o nome do grupo: </label>
+							<input type="text" id="group_name" class="inputUser" required><br>
+						</div>
+
+                        <div class="user-element">
+							<label for="user-search-bar">Adicione 3 novos membros: </label>
+                        	<input type="text" id="user-search-bar" class="inputUser" onkeyup="updateUserList()" required><br>
+						</div>
+
+                        <div class="user-element">
+							<ul id="users-list"></ul>
+						</div>
+
+						<div id="user-element">
+							<div id="outers">
+								<a href="polls.html">Responda Enquetes</a><br>
+								<a href="user-profile.html">Voltar ao perfil</a>
+							</div>
+						</div>
+                    </form>
+                </div>
+
+        </div>
+    </main>
+
+	<footer>
+		<div class="rodape">
+			<p>Developers <a href="https://www.linkedin.com/in/limadeyvison/" target="_blank">Deyvison Lima</a> & <a href="https://www.linkedin.com/in/lucas-sousa-silva-116267259" target="_blank">Lucas Sousa Silva</a></p>
+		</div>
+	</footer>
+
+</body>
+</html>
